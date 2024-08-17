@@ -1,0 +1,270 @@
+/* Comment List Container */
+.comment-list-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Comment Item Styling */
+.comment-item {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-bottom: 1px solid #e6e6e6;
+    position: relative;
+}
+
+/* Reply Styling */
+.reply {
+    margin-left: 40px;
+    border-left: 2px solid #e6e6e6;
+    padding-left: 10px;
+}
+
+/* Header with User Info */
+.comment-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.user-photo {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+}
+
+.user-name {
+    font-weight: 600;
+    margin-right: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.comment-time {
+    font-size: 12px;
+    color: #777;
+}
+
+/* Comment Text */
+.comment-body {
+    margin-bottom: 8px;
+}
+
+.comment-text {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+    white-space: pre-wrap;
+}
+
+/* Show More/Show Less Button */
+.show-more-button {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    padding: 0;
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+.show-more-button:hover {
+    text-decoration: underline;
+}
+
+/* Comment Image */
+.comment-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 8px;
+}
+
+/* Attached Thumbnails */
+.comment-thumbnail {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.comment-thumbnail:hover {
+    transform: scale(1.05);
+}
+
+/* Footer with Action Buttons */
+.comment-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+/* Emoji Reaction Container */
+.emoji-reaction {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.emoji-container {
+    display: flex;
+    gap: 8px;
+}
+
+.emoji-button {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.2s, color 0.2s;
+}
+
+.emoji-button:hover {
+    transform: scale(1.2);
+    color: #007bff;
+}
+
+.emoji-button.clicked {
+    animation: pop-out 0.5s ease-out;
+}
+
+.emoji {
+    margin-right: 4px;
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.reply-button,
+.delete-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #007bff;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.reply-button:hover,
+.delete-button:hover {
+    background: #f0f0f0;
+    color: #0056b3;
+}
+
+/* Reply Input Styling */
+.reply-input {
+    margin-top: 10px;
+    padding: 10px;
+    border-top: 1px solid #e6e6e6;
+}
+
+.reply-input textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    resize: none;
+}
+
+.reply-input button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.reply-input button:hover {
+    background-color: #0056b3;
+}
+
+/* Keyframes for Pop-Out Animation */
+@keyframes pop-out {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.3);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .comment-list-container {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    .comment-item {
+        padding: 8px;
+    }
+
+    .reply {
+        margin-left: 20px;
+        padding-left: 8px;
+    }
+
+    .user-photo {
+        width: 30px;
+        height: 30px;
+        margin-right: 8px;
+    }
+
+    .user-name {
+        font-size: 13px;
+    }
+
+    .comment-text {
+        font-size: 13px;
+    }
+
+    .comment-footer {
+        font-size: 13px;
+    }
+
+    .emoji-button {
+        font-size: 16px;
+    }
+
+    .reply-button,
+    .delete-button {
+        font-size: 13px;
+    }
+
+    .reply-input {
+        padding: 8px;
+    }
+
+    .reply-input textarea {
+        font-size: 13px;
+    }
+
+    .reply-input button {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+}

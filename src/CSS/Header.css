@@ -1,0 +1,138 @@
+/* Header.css */
+
+.header {
+    background: linear-gradient(135deg, #f5f5dc, #e0e0e0); /* Light-colored gradient */
+    color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #dcdcdc;
+    position: relative;
+    z-index: 1000;
+  }
+  
+  .header-content {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .header-title {
+    font-size: 2.5rem; /* Increased for better emphasis */
+    font-weight: 700;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .header-title:hover {
+    color: #007bff;
+  }
+  
+  .auth-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  .sign-in-button,
+  .sign-out-button {
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #0c0c0c;
+    border-radius: 25px; /* Rounded corners for a modern look */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .sign-in-button:hover,
+  .sign-out-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .google-logo {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+  
+  .user-profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-photo {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+    border: 2px solid #007bff; /* Add a border for emphasis */
+  }
+  
+  .user-photo:hover {
+    transform: scale(1.1);
+  }
+  
+  .user-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .user-name {
+    font-size: 1.1rem; /* Slightly larger font for better readability */
+    font-weight: 600;
+    color: #555;
+  }
+  
+  @media (max-width: 768px) {
+    .header-content {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+    }
+  
+    .header-title {
+      font-size: 2rem; /* Adjusted for smaller screens */
+      margin-bottom: 10px;
+      text-align: center;
+    }
+  
+    .auth-wrapper {
+      margin-top: 10px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    .sign-in-button,
+    .sign-out-button {
+      width: 100%;
+      justify-content: center;
+      padding: 12px;
+      font-size: 1.1rem;
+    }
+  
+    .user-photo {
+      width: 40px;
+      height: 40px;
+      margin-right: 5px;
+    }
+  
+    .user-name {
+      font-size: 1rem;
+    }
+  }
+  

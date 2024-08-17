@@ -1,46 +1,85 @@
-# Getting Started with Create React App
+🌟 Comment System with Google Authentication & Rich Text Features
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the dynamic comment system project! This application integrates Google Authentication and provides a rich text comment feature with various functionalities. The backend is powered by Firebase to handle authentication, storage, and database management.
 
-## Available Scripts
+📋 Task Brief
 
-In the project directory, you can run:
+Create a dynamic comment system that allows users to:
+- **Sign in** using Google Authentication.
+- Post **formatted comments** with rich text features.
+- Attach **files** to comments.
+- **Tag people** within comments.
+- Sort comments by **latest** and **popularity**.
+- **Paginate** comments, displaying 8 per page.
 
-### `npm start`
+🚀 Functional Requirements
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+ 1. Google Authentication
+- Integrate Google Authentication to enable users to sign in and comment.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+ 2. Comment Input Box
+- **Formatting Options:** Bold, italic, underline, and hyperlink.
+- **File Attachments:** Allow image file attachments.
+- **Tagging:** Enable tagging of people in comments.
+- **Character Limit:** Maximum 250 characters.
 
-### `npm test`
+3. Comment Sorting
+- **Sort By:** Latest and popularity (based on reactions).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. Comment Features
+- **Display:** User’s profile picture, name, and comment text.
+- **Reactions:** Include reaction buttons and show counts.
+- **Replies:** Provide a reply button for each comment.
+- **Time Display:** Show comment time (e.g., seconds, minutes, hours, days ago).
+- **Show More/Show Less:** For comments longer than 5 lines.
+- **File Thumbnails:** Show attached files as thumbnails.
 
-### `npm run build`
+5. Pagination
+- **Pagination Controls:** Display 8 comments per page.
+- **State Handling:** Show empty state, success, and failure toast messages.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+🛠️ Installation & Setup
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/yourusername/comment-system.git
+Navigate to Project Directory:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+bash
+Copy code
+cd comment-system
+Install Dependencies:
 
-### `npm run eject`
+bash
+Copy code
+npm install
+Configure Firebase:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Add your Firebase configuration to .env file.
+Run the Project:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+bash
+Copy code
+npm start
+🌐 Deployment
+The project is hosted on Vercel/Netlify.
+🎥 Demo Video
+Watch the walkthrough of the application here.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+📂 Deliverables
+Source code in a zip file.
+Hosted project link.
+Video demonstration of the application.
+🧩 Judging Criteria
+Functionality: Meets all specified requirements.
+Code Quality: Well-organized and modular.
+User Experience: Intuitive and user-friendly interface.
+Error Handling: Graceful error handling.
+Performance: Smooth performance with no noticeable lag.
+TypeScript & ESLint: Code written in TypeScript and free of ESLint errors.
+📄 License
+This project is licensed under the MIT License. See LICENSE for more details.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Feel free to reach out for any questions or feedback!
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Happy coding! 🎉
